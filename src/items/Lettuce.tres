@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=6 format=3 uid="uid://b52dauyv1h5kb"]
+
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="1_70ypl"]
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_rssmp"]
+[ext_resource type="Resource" uid="uid://bktlgk63qtmvw" path="res://src/items/ChoppedLettuce.tres" id="2_x3y3q"]
+[ext_resource type="Texture2D" uid="uid://c4hhiqxiwft7e" path="res://src/items/Lettuce.png" id="4_vu4jk"]
+
+[sub_resource type="Resource" id="Resource_m06qy"]
+script = ExtResource("1_rssmp")
+method = 0
+result = ExtResource("2_x3y3q")
+metadata/_custom_type_script = "uid://ng2cwpf5jo4c"
+
+[resource]
+script = ExtResource("1_70ypl")
+name = "Lettuce"
+texture = ExtResource("4_vu4jk")
+recipes = Array[ExtResource("1_rssmp")]([SubResource("Resource_m06qy")])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"
