@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=7 format=3 uid="uid://bgxjiu1scltgp"]
+
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_l8hto"]
+[ext_resource type="Resource" uid="uid://bd62gyhldykwj" path="res://src/items/Spagehetti.tres" id="2_pmlek"]
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="3_dpjsg"]
+[ext_resource type="Resource" uid="uid://bd5isu5raco52" path="res://src/items/SPAGHETTIEEEEEEEE.tres" id="3_fqx5j"]
+[ext_resource type="Texture2D" uid="uid://do3v34ty8eg08" path="res://src/items/SAUCIEEEE.png" id="5_58po3"]
+
+[sub_resource type="Resource" id="Resource_e4gpc"]
+script = ExtResource("1_l8hto")
+ingredient = ExtResource("2_pmlek")
+method = 0
+result = ExtResource("3_fqx5j")
+metadata/_custom_type_script = "uid://ng2cwpf5jo4c"
+
+[resource]
+script = ExtResource("3_dpjsg")
+name = "Sauce"
+texture = ExtResource("5_58po3")
+recipes = Array[ExtResource("1_l8hto")]([SubResource("Resource_e4gpc")])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"

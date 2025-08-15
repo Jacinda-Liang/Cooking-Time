@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=6 format=3 uid="uid://bd62gyhldykwj"]
+
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_th8aj"]
+[ext_resource type="Resource" uid="uid://bktlgk63qtmvw" path="res://src/items/ChoppedLettuce.tres" id="2_4stig"]
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="3_1q8xb"]
+[ext_resource type="Texture2D" uid="uid://do3v34ty8eg08" path="res://src/items/SAUCIEEEE.png" id="4_6d6oh"]
+
+[sub_resource type="Resource" id="Resource_m06qy"]
+script = ExtResource("1_th8aj")
+method = 0
+result = ExtResource("2_4stig")
+metadata/_custom_type_script = "uid://ng2cwpf5jo4c"
+
+[resource]
+script = ExtResource("3_1q8xb")
+name = "Sauce"
+texture = ExtResource("4_6d6oh")
+recipes = Array[ExtResource("1_th8aj")]([SubResource("Resource_m06qy")])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=7 format=3 uid="uid://c3xyymvu42kl2"]
+
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_id702"]
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="2_hcsym"]
+[ext_resource type="Resource" uid="uid://b4j6djer8jm3e" path="res://src/items/Flour.tres" id="2_v4hob"]
+[ext_resource type="Resource" uid="uid://cokt5nsdx7f6j" path="res://src/items/Noodles.tres" id="3_7h5cc"]
+[ext_resource type="Texture2D" uid="uid://dfq3ce8d7toc4" path="res://src/items/EGGGGIEEEEE.png" id="5_xli1v"]
+
+[sub_resource type="Resource" id="Resource_e5j60"]
+script = ExtResource("1_id702")
+ingredient = ExtResource("2_v4hob")
+method = 0
+result = ExtResource("3_7h5cc")
+metadata/_custom_type_script = "uid://ng2cwpf5jo4c"
+
+[resource]
+script = ExtResource("2_hcsym")
+name = "Egg"
+texture = ExtResource("5_xli1v")
+recipes = Array[ExtResource("1_id702")]([SubResource("Resource_e5j60")])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"

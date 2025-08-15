@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=7 format=3 uid="uid://dtt6a0acga6kg"]
+
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_g1ti0"]
+[ext_resource type="Resource" uid="uid://bktlgk63qtmvw" path="res://src/items/ChoppedLettuce.tres" id="2_66s0m"]
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="2_c02ph"]
+[ext_resource type="Texture2D" uid="uid://bp76uvkqq7ts8" path="res://src/items/ChoppedFruit.png" id="3_c02ph"]
+[ext_resource type="Resource" uid="uid://cump8nyi8e6wk" path="res://src/items/FruitSalad.tres" id="3_ce0e5"]
+
+[sub_resource type="Resource" id="Resource_vssde"]
+script = ExtResource("1_g1ti0")
+ingredient = ExtResource("2_66s0m")
+method = 0
+result = ExtResource("3_ce0e5")
+metadata/_custom_type_script = "uid://ng2cwpf5jo4c"
+
+[resource]
+script = ExtResource("2_c02ph")
+name = "Chopped Fruit"
+texture = ExtResource("3_c02ph")
+recipes = Array[ExtResource("1_g1ti0")]([SubResource("Resource_vssde")])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"
