@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=6 format=3 uid="uid://bd5isu5raco52"]
+
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_rsuus"]
+[ext_resource type="Resource" uid="uid://bktlgk63qtmvw" path="res://src/items/ChoppedLettuce.tres" id="2_ui6bl"]
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="3_roq35"]
+[ext_resource type="Texture2D" uid="uid://bsh28qdglg4oj" path="res://src/items/SPAGETTIEEEE.png" id="4_rsuus"]
+
+[sub_resource type="Resource" id="Resource_m06qy"]
+script = ExtResource("1_rsuus")
+method = 0
+result = ExtResource("2_ui6bl")
+metadata/_custom_type_script = "uid://ng2cwpf5jo4c"
+
+[resource]
+script = ExtResource("3_roq35")
+name = "Spaghettieeeeee"
+texture = ExtResource("4_rsuus")
+recipes = Array[ExtResource("1_rsuus")]([SubResource("Resource_m06qy")])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"

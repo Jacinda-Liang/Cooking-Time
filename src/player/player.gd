@@ -51,5 +51,7 @@ func drop_item()->Item:
 	held_item = null
 	return item
 	
-	
+func delete_item()-> void:
+	if held_item != null: 
+		held_item.queue_free()
 	

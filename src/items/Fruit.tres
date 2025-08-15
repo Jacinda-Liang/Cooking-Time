@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=6 format=3 uid="uid://dqxfqpdak63bx"]
+
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_k3hy4"]
+[ext_resource type="Resource" uid="uid://dtt6a0acga6kg" path="res://src/items/ChoppedFruit.tres" id="2_6ojy0"]
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="2_vl6tu"]
+[ext_resource type="Texture2D" uid="uid://byaxmrypyy1x8" path="res://src/items/Fruit.png" id="4_jw6sm"]
+
+[sub_resource type="Resource" id="Resource_lryxm"]
+script = ExtResource("1_k3hy4")
+method = 0
+result = ExtResource("2_6ojy0")
+metadata/_custom_type_script = "uid://ng2cwpf5jo4c"
+
+[resource]
+script = ExtResource("2_vl6tu")
+name = "Fruit"
+texture = ExtResource("4_jw6sm")
+recipes = Array[ExtResource("1_k3hy4")]([SubResource("Resource_lryxm")])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"

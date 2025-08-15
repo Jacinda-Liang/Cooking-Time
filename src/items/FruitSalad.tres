@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=4 format=3 uid="uid://cump8nyi8e6wk"]
+
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_bvkfs"]
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="2_1h15u"]
+[ext_resource type="Texture2D" uid="uid://c35gn4tcbucv7" path="res://src/items/AMAZINGfruitsalad.png" id="3_1h15u"]
+
+[resource]
+script = ExtResource("2_1h15u")
+name = "Fruit salad"
+texture = ExtResource("3_1h15u")
+recipes = Array[ExtResource("1_bvkfs")]([])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"

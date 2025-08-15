@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=6 format=3 uid="uid://cokt5nsdx7f6j"]
+
+[ext_resource type="Script" uid="uid://ng2cwpf5jo4c" path="res://src/items/recipe.gd" id="1_0gr1g"]
+[ext_resource type="Resource" uid="uid://bd62gyhldykwj" path="res://src/items/Spagehetti.tres" id="2_0gr1g"]
+[ext_resource type="Script" uid="uid://mxm4arf4ffs6" path="res://src/items/itemresource.gd" id="3_86cy3"]
+[ext_resource type="Texture2D" uid="uid://bebdrvvty7xbo" path="res://src/items/Noodles.png" id="3_q18mf"]
+
+[sub_resource type="Resource" id="Resource_0gr1g"]
+script = ExtResource("1_0gr1g")
+method = 1
+result = ExtResource("2_0gr1g")
+metadata/_custom_type_script = "uid://ng2cwpf5jo4c"
+
+[resource]
+script = ExtResource("3_86cy3")
+name = "Noodles"
+texture = ExtResource("3_q18mf")
+recipes = Array[ExtResource("1_0gr1g")]([SubResource("Resource_0gr1g")])
+metadata/_custom_type_script = "uid://mxm4arf4ffs6"
